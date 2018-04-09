@@ -19,7 +19,6 @@ import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader'
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
-import { UniversalLocalizeModuleMapNgFactoryLoader } from './universal-localize-module-map-ngfactory-loader';
 
 @NgModule({
   imports: [

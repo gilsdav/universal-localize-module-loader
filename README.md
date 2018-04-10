@@ -4,9 +4,6 @@ Translate lazy-loaded routes using localize-router server-side using Universal.
 If you use Universal and localize-router, you are facing a problem: main routes are translated but not lazyloaded routes.
 This module loader will help you.
 
-## Where to put this file ?
-You need to copy the file `universal-localize-module-map-ngfactory-loader.ts` next to your `app.server.module.ts`.
-
 ## How to use
 
 ### Before
@@ -36,7 +33,7 @@ export class AppServerModule {}
 ```
 
 ### After
-Add this loader as provider in your `app.server.module.ts` using this code :
+Add this provider in your `app.server.module.ts` using this code :
 
 ```
 {
@@ -53,7 +50,7 @@ import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader'
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
-import { UniversalLocalizeModuleMapNgFactoryLoader } from './universal-localize-module-map-ngfactory-loader';
+import { LazyUniversalModuleLoaderProvider } from 'localize-router-lazy-universal-module-loader';
 
 @NgModule({
   imports: [
@@ -63,10 +60,7 @@ import { UniversalLocalizeModuleMapNgFactoryLoader } from './universal-localize-
   ],
   providers: [
     // Add universal-only providers here
-    {
-      provide: NgModuleFactoryLoader,
-      useClass: UniversalLocalizeModuleMapNgFactoryLoader
-    }
+    LazyUniversalModuleLoaderProvider
   ],
   bootstrap: [ AppComponent ],
 })

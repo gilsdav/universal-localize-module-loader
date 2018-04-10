@@ -8,7 +8,7 @@
 import {
   Injectable,
   NgModuleFactoryLoader,
-  InjectionToken,
+  // InjectionToken,
   NgModuleFactory,
   Inject,
   Type,
@@ -25,7 +25,7 @@ import { LocalizeParser } from 'localize-router';
  * NgModuleFactoryLoader which does not lazy load
  */
 @Injectable()
-export class UniversalLocalizeModuleMapNgFactoryLoader implements NgModuleFactoryLoader {
+export class LazyUniversalModuleLoader implements NgModuleFactoryLoader {
   constructor(@Inject(forwardRef(() => LocalizeParser)) private localize: LocalizeParser,
     private compiler: Compiler, @Inject(MODULE_MAP) private moduleMap: ModuleMap) { }
 

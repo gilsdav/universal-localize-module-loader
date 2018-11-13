@@ -1,6 +1,6 @@
 {
   "name": "localize-router-lazy-universal-module-loader",
-  "version": "1.0.0",
+  "version": "1.0.0-ntr",
   "description": "A Module loader to translate lazy-loaded routes using localize-router server-side with Universal",
   "scripts": {
     "prepublish": "ngc && npm run build",
@@ -14,6 +14,7 @@
     "localize",
     "ngx-translate",
     "localize-router",
+    "ngx-translate-router",
     "universal"
   ],
   "author": "Gilson David",
@@ -26,31 +27,31 @@
   "typings": "index.d.ts",
   "homepage": "https://github.com/gilsdav/universal-localize-module-loader",
   "peerDependencies": {
-    "@angular/common": ">=5.2.5",
-    "@angular/core": ">=5.2.5",
-    "@angular/router": ">=5.2.5",
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0",
+    "@angular/router": ">=6.0.0",
     "@ngx-translate/core": ">=9.1.1",
-    "localize-router": ">=1.0.0-rc.1",
-    "@nguniversal/module-map-ngfactory-loader": ">=5.0.0-beta.5"
+    "@gilsdav/ngx-translate-router": ">=1.0.2",
+    "@nguniversal/module-map-ngfactory-loader": ">=6.0.0"
   },
   "devDependencies": {
-    "@angular/common": "~5.2.5",
-    "@angular/compiler": "~5.2.5",
-    "@angular/compiler-cli": "~5.2.5",
-    "@angular/core": "~5.2.5",
-    "@angular/router": "5.2.6",
-    "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
-    "@ngx-translate/core": "^9.1.1",
+    "@angular/common": "~7.0.3",
+    "@angular/compiler": "~7.0.3",
+    "@angular/compiler-cli": "~7.0.3",
+    "@angular/core": "~7.0.3",
+    "@angular/router": "~7.0.3",
+    "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
+    "@ngx-translate/core": "^11.0.0",
     "@types/hammerjs": "2.0.34",
     "@types/jasmine": "2.5.51",
     "@types/node": "7.0.22",
     "awesome-typescript-loader": "3.1.3",
     "clean-webpack-plugin": "0.1.16",
     "codelyzer": "3.0.1",
-    "localize-router": "^1.0.0-rc.3",
-    "rxjs": "^5.5.0",
+    "@gilsdav/ngx-translate-router": "^1.0.2",
+    "rxjs": "^6.3.3",
     "webpack": "3.5.5",
-    "typescript": "2.4.2",
+    "typescript": "3.1.1",
     "tslint": "5.4.3",
     "tslint-loader": "3.5.3"
   }

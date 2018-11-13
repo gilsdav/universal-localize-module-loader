@@ -16,10 +16,10 @@ import {
   Injector,
   forwardRef
 } from '@angular/core';
-import { ModuleMap } from '@nguniversal/module-map-ngfactory-loader/typings/src/module-map';
+import { ModuleMap } from '@nguniversal/module-map-ngfactory-loader/src/module-map';
 import { MODULE_MAP } from '@nguniversal/module-map-ngfactory-loader';
 import { ROUTES } from '@angular/router';
-import { LocalizeParser } from 'localize-router';
+import { LocalizeParser } from '@gilsdav/ngx-translate-router';
 
 /**
  * NgModuleFactoryLoader which does not lazy load

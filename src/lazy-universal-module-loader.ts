@@ -19,7 +19,7 @@ import {
 import { ModuleMap } from '@nguniversal/module-map-ngfactory-loader/src/module-map';
 import { MODULE_MAP } from '@nguniversal/module-map-ngfactory-loader';
 import { ROUTES } from '@angular/router';
-import { LocalizeParser } from '@gilsdav/ngx-translate-router';
+import { LocalizeParser } from 'localize-router';
 
 /**
  * NgModuleFactoryLoader which does not lazy load

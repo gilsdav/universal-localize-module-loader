@@ -4,6 +4,10 @@ Translate lazy-loaded routes using localize-router server-side using Universal.
 If you use Universal and localize-router, you are facing a problem: main routes are translated but not lazyloaded routes.
 This module loader will help you.
 
+## Choose the appropriate version
+* If you use `localize-router` => `1.0.0`
+* If you use `ngx-translate-router` => `1.0.0-ntr`
+
 ## How to install
 
 Use this command : `npm install --save localize-router-lazy-universal-module-loader`

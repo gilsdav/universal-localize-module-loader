@@ -5,8 +5,11 @@ If you use Universal and localize-router, you are facing a problem: main routes 
 This module loader will help you.
 
 ## Choose the appropriate version
-* If you use `localize-router` => `1.0.0`
-* If you use `ngx-translate-router` => `1.0.0-ntr`
+| Condition | Version |
+| --- | --- |
+| If you use `ngx-translate-router`| `1.0.0-ntr` |
+| If you use `localize-router` >=2 with `Angular` >= 7 | `1.0.1` |
+| If you use `localize-router` | `1.0.0` |
 
 ## How to install
 

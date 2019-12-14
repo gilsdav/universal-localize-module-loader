@@ -1,4 +1,7 @@
 # universal-localize-module-loader
+
+***DEPRECATED since Angular 8***
+
 Translate lazy-loaded routes using localize-router server-side using Universal.
 
 If you use Universal and localize-router, you are facing a problem: main routes are translated but not lazyloaded routes.
